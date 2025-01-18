@@ -1,0 +1,51 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment directories
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignore IDE configurations
+.idea/
+.vscode/
+
+# Ignore test results and coverage reports
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore logs
+*.log
+
+# Ignore WebDriver binaries
+chromedriver
+geckodriver
+msedgedriver
+safaridriver
+
+# Ignore Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Ignore local environment files
+*.env
+*.env.*
+
+# Ignore other build files
+build/
+dist/
+*.egg-info/
+
+
+# Ignore macOS-specific files
+.DS_Store
+
