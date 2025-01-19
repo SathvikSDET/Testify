@@ -8,8 +8,8 @@ from selenium.webdriver.remote.webdriver import WebDriver
 
 class WebDriverFactory(ABC):
   
-    __chrome_driver_local = lambda: webdriver.Chrome(executable_path='/path/to/chromedriver')
-    __firefox_driver_local = lambda: webdriver.Firefox(executable_path='/path/to/geckodriver')
+    __chrome_driver_local = lambda: webdriver.Chrome()
+    __firefox_driver_local = lambda: webdriver.Firefox()
     __safari_driver_local = lambda: webdriver.Safari()
 
     __chrome_driver_remote = lambda: webdriver.Remote(
