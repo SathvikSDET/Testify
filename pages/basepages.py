@@ -10,7 +10,7 @@ from Testify.utils.config import config
 class  BasePom(ABC) :
 
     def __init__(self, driver):
-        self.driver = driver
+        self.driver = PageFactory.init_element(self.driver)
         self.wait = WebDriverWait(self.driver, 20)
         self.config = config()
 
