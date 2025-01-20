@@ -10,9 +10,10 @@ from Testify.utils.config import config
 class  BasePom(ABC) :
 
     def __init__(self, driver):
-        self.driver = PageFactory.init_element(self.driver)
+        self.driver = driver
         self.wait = WebDriverWait(self.driver, 20)
         self.config = config()
+        PageFactory.init_element(self.driver,self)
 
 
     def find_element(self, webelement): 
