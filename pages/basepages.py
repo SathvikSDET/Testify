@@ -7,6 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from Testify.utils.config import config
 
+
 class  BasePom(ABC) :
 
     def __init__(self, driver):
